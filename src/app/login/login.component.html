@@ -1,0 +1,17 @@
+<div class="container">
+  <form #foormLogin="ngForm" (ngSubmit)="saveLogin(foormLogin.value)">
+    <div class="alert alert-danger" *ngIf="mode === 1">
+      <strong>Bad credientials</strong>
+    </div>
+    <div class="form-group">
+      <label for="username">username</label>
+      <input class="form-control" type="text" name="username" id="username" [(ngModel)]="username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">password</label>
+      <input class="form-control" type="password" name="password" id="password" [(ngModel)]="password">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>

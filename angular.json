@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "catalogueWebV1"
+    }
+  },
+  "defaultProject": "catalogueWebV1",
+  "cli": {
+    "analytics": "c1840a4c-1aeb-46a1-b267-de94fe0e2193"
+  }
 }
