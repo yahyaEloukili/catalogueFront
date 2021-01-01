@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { JwtHelper } from "angular2-jwt";
+
 
 @Injectable({
   providedIn: 'root'
@@ -30,11 +30,11 @@ export class LoginService implements OnInit {
   }
   isAdmin() {
     this.jwtToken = localStorage.getItem("token");
-    let jwtHelper = new JwtHelper();
+
     if (this.jwtToken) {
 
 
-      this.roles = jwtHelper.decodeToken(this.jwtToken).roles;
+
 
 
       if (this.roles) {
